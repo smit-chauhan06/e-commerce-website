@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "ralewayBlack";
+  src: local("Raleway"),
+    url("./assets/Fonts/Raleway-Black.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "ralewayBold";
+  src: local("Raleway"),
+    url("./assets/Fonts/Raleway-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "ralewayExtraBold";
+  src: local("Raleway"),
+    url("./assets/Fonts/Raleway-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "ralewayExtraLight";
+  src: local("Raleway"),
+    url("./assets/Fonts/Raleway-ExtraLight.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "ralewayLight";
+  src: local("Raleway"),
+    url("./assets/Fonts/Raleway-Light.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "ralewayMedium";
+  src: local("Raleway"),
+    url("./assets/Fonts/Raleway-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "ralewayRegular";
+  src: local("Raleway"),
+    url("./assets/Fonts/Raleway-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "ralewaySemiBold";
+  src: local("Raleway"),
+    url("./assets/Fonts/Raleway-SemiBold.ttf") format("truetype");
+  font-style: normal;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --breakpoint-xxs: 300px;
+  --breakpoint-xs: 400px;
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 900px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1536px;
+  --color-blackColor: #000;
+  --color-lightGrey: #f5f5f5;
+  --color-whiteColor: #ffff;
+  --color-cardPriceColor: #db4444;
+  --color-greyText: #7d8184;
+  --color-bgGrey: #f3f4f6;
+  --color-sliderbg: #f8d6a4;
+  --color-greyBg: #2f2e30;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Apply default font to body */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "raleway";
+  font-weight: lighter;
+}
+
+.root-div {
+  @apply w-[100vw];
+}
+
+.content-div {
+  @apply w-[90vw] max-w-[1600px];
 }
