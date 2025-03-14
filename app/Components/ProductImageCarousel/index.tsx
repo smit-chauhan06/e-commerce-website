@@ -33,7 +33,7 @@ const ProductImageCarousel = (props: imageData) => {
   }, []);
 
   return (
-    <div className="content-div grid grid-cols-1 md:grid-cols-2">
+    <div className="content-div grid grid-cols-1 md:grid-cols-2 gap-[10px] md:gap-[30px]">
       <div>
         <div className="flex justify-center items-center">
           <Image
@@ -104,6 +104,20 @@ const ProductImageCarousel = (props: imageData) => {
             <h1 className="text-[32px]">₹3,000</h1>
             <p className="line-through text-[20px] text-greyText">₹5,000</p>
           </div>
+          <p className="text-prdoctDescColor mt-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+            quisquam dolorum reprehenderit blanditiis debitis officiis, tempore
+            inventore vero dolorem amet unde, doloribus voluptas laboriosam,
+            iure expedita cumque consequuntur saepe quos culpa sapiente
+            dignissimos recusandae quibusdam ducimus! Debitis eaque esse iste
+            natus blanditiis repudiandae labore qui consectetur eligendi! Natus,
+            iure culpa quam ducimus provident iusto id eius neque libero
+            perferendis minima voluptates laudantium quo assumenda aut fugit
+            ipsa earum excepturi dolore quis nobis ipsam reprehenderit.
+            Obcaecati optio delectus pariatur atque officia dicta consectetur
+            amet magni laudantium exercitationem earum, debitis quos velit,
+            deleniti eligendi.
+          </p>
         </div>
       </div>
     </div>
